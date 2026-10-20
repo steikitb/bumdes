@@ -1,0 +1,18 @@
+# Database & runtime
+sistem/database/*.sqlite
+sistem/database/*.sqlite-*
+sistem/database/*.bak*
+sistem/database/backup_pre_fix_*/
+sistem/database/*.log
+*.log
+error_log
+
+# Upload pengguna
+publik/unggahan/*
+!publik/unggahan/.gitkeep
+
+# Backup/development leftovers
+*.bak*
+*.off
+*.tmp
+node_modules/

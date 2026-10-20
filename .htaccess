@@ -1,0 +1,35 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Melindungi folder inti sistem dari akses langsung via browser
+    RewriteRule ^sistem/inti/(.*)$ - [F,L]
+    RewriteRule ^sistem/database/(.*)$ - [F,L]
+    RewriteRule ^sistem/konfigurasi/(.*)$ - [F,L]
+    RewriteRule ^sistem/fungsi/(.*)$ - [F,L]
+    # Keamanan: blokir script inject/development (fatal wipe-data)
+    RewriteRule ^sistem/inject_dummy\.php$ - [F,L]
+# Keamanan: folder sistem root (diluar inti/db/konfigurasi/fungsi) kena [F] utk *.php
+    RewriteRule ^sistem/[^/]*\.php$ - [F,L]
+
+    # Keamanan: blokir akses HTTP langsung ke seluruh folder tampilan/.
+    # File di sini hanya boleh di-include oleh publik/index.php (router halaman),
+    # tidak pernah diakses langsung. Tanpa aturan ini, file proses yang salah
+    # tempat (mis. sistem/tampilan/pengaturan/proses_migrasi_saldo_awal.php)
+    # bisa dieksekusi langsung dan melewati router.
+    RewriteRule ^sistem/tampilan/ - [F,L]
+
+
+    # Aturan Routing Utama: Arahkan proses dan ajax ke router di folder publik
+    RewriteRule ^sistem/ajax/(.*)$ publik/ajax.php?endpoint=$1 [L,QSA]
+    RewriteRule ^sistem/proses/(.*)$ publik/proses.php?aksi=$1 [L,QSA]
+
+    # Arahkan akses ke root directory langsung ke publik/index.php
+    RewriteRule ^$ publik/index.php [L,QSA]
+
+    # Arahkan request aset atau file (seperti index.php) yang tidak ditemukan di root ke folder publik
+    # Mencegah loop dengan mengecek apakah sudah berada di folder publik
+    RewriteCond %{REQUEST_URI} !/publik/
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ publik/$1 [L,QSA]
+</IfModule>

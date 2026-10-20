@@ -82,4 +82,6 @@ Database desktop disimpan di direktori `userData` Electron, dengan backup otomat
 
 ## Dokumentasi
 
-Panduan pemakaian tersedia di [`panduan/`](panduan/_sidebar.md) dan dapat dibuka dari menu **Panduan** di aplikasi.
+- **Panduan pengguna** — [`panduan/`](panduan/_sidebar.md); juga dapat dibuka dari menu **Panduan** di aplikasi.
+- **Desain sistem** — [Use Case, DFD, dan ERD](docs/diagram/usecase-dfd-erd.md), ditulis dengan Mermaid, lengkap dengan gambar siap pakai di [`docs/diagram/gambar/`](docs/diagram/gambar).
+

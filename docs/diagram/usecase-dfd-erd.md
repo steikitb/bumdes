@@ -1149,23 +1149,3 @@ Semuanya hanya menyimpan data kegiatan dan tanggal, tanpa relasi ke tabel lain.
 3. Klik **Actions > Export PNG/SVG**.
 4. Untuk dokumen Word: simpan SVG, lalu *Insert > Pictures* (Word 2019+ mendukung SVG),
    atau gunakan PNG resolusi tinggi.
-
-## 5. File Gambar Siap Pakai
-
-Hasil render ada di folder `gambar/` (PNG + SVG):
-
-| File | Isi | Ukuran render |
-|---|---|---|
-| `01-use-case.png` | Use case diagram (16 use case utama) | 938 x 1672 px |
-| `02-dfd-level-0.png` | DFD konteks | 1062 x 516 px |
-| `03-dfd-level-1.png` | DFD level 1 | 3987 x 893 px |
-| `04-dfd-level-2-penjualan.png` | DFD level 2 proses 3.0 | 1847 x 499 px |
-| `05-dfd-level-2-pembelian.png` | DFD level 2 proses 4.0 | 1432 x 502 px |
-| `06-erd-gabungan.png` | ERD seluruh entitas (untuk lampiran A3) | 10191 x 1559 px |
-| `07-erd-inti.png` | ERD master & transaksi | 1686 x 1388 px |
-| `08-erd-simpanan-pinjaman-shu.png` | ERD simpanan, pinjaman, SHU | 2262 x 1073 px |
-| `09-erd-akuntansi-aset-hibah.png` | ERD akuntansi, beban, aset, hibah | 1845 x 1116 px |
-| `10-erd-sdm-administrasi.png` | ERD SDM & administrasi | 1510 x 1030 px |
-
-SVG disarankan untuk dicetak/di-zoom; PNG untuk ditempel cepat ke Word/Google Docs.
-

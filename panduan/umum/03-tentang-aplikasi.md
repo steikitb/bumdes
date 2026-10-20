@@ -1,19 +1,19 @@
 # Tentang Aplikasi
 
-Halaman **Tentang Aplikasi** (item paling bawah di navigasi) menampilkan identitas dan cakupan aplikasi. Halaman ini bisa dibuka oleh semua pengguna yang sudah masuk dan bersifat hanya-baca.
+Halaman **Tentang Aplikasi** (item paling bawah di navigasi) menampilkan identitas aplikasi dan pengembangnya. Halaman ini bisa dibuka oleh semua pengguna yang sudah masuk, dan isinya tidak bisa diubah dari sini.
 
 ## Isi Halaman
 
 * **Judul Aplikasi** — "Sistem Informasi Akuntansi — BUMDes & Koperasi Berbasis Standar Akuntansi Keuangan Entitas Privat (SAK EP)".
-* **Tentang Aplikasi** — ringkasan fungsi dan dasar standar akuntansi yang dipakai.
-* **Cakupan** — daftar modul utama yang tersedia.
-* **Tujuan** — penjelasan mengenai digitalisasi pencatatan dan pelaporan keuangan BUMDes/Koperasi secara luring.
+* **Pengembang / Peneliti** — nama, institusi, program studi, dan konsentrasi bidang studinya.
+* **Dosen Pembimbing** — nama dan keterangan peran bimbingan.
+* **Dedikasi & Tujuan** — penjelasan bahwa aplikasi ini merupakan penerapan ilmu Manajemen Aset Publik dan Akuntansi untuk keperluan tugas akhir, dengan tujuan digitalisasi pencatatan dan pelaporan keuangan BUMDes maupun Koperasi secara luring (tanpa internet) yang aman, akurat, dan akuntabel sesuai Kepmendesa dan SAK EP.
 * Tombol **Kembali ke Dasbor** untuk keluar dari halaman.
 
 ## Kapan Harus Dilihat
 
-* **Saat serah terima aplikasi** — sebagai rujukan mengenai ruang lingkup sistem.
-* **Untuk kebutuhan dukungan teknis** — jika perlu menjelaskan modul dan standar yang dipakai saat melaporkan kendala.
+* **Saat serah terima aplikasi** — untuk mencantumkan identitas pembuat aplikasi pada dokumen serah terima ke BUMDes.
+* **Untuk kebutuhan dukungan teknis** — jika perlu menghubungi pengembang, sertakan informasi pada halaman ini sebagai referensi.
 
 ## Hubungan dengan Halaman Lain
 
